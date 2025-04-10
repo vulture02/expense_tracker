@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Section */
+input[type='text'], input[type=' text'] {
+    margin-bottom: 10px;
+    margin-left:  10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type='text']:focus, input[type=' text']:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px #4facfe;
+}
+
+/* Button Styles */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4facfe;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00f2fe;
+    transform: scale(1.05);
+}
+
+/* Expense List */
+.expense-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.expense-list li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.expense-list li:hover {
+    transform: scale(1.02);
+}
+
+/* Delete Button */
+.expense-list button {
+    background-color: #ff4d4f;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.expense-list button:hover {
+    background-color: #d9363e;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
