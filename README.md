@@ -4,8 +4,7 @@ A simple, browser-based Expense Tracker that allows users to record income and e
 
 ## 🌟 Features
 
-- Add income and expense transactions
-- Automatically calculates total balance, income, and expenses
+- Add income and expense transactions and delete
 - Delete transactions
 - Stores data in localStorage (persists after page refresh)
 - Responsive design for mobile and desktop
